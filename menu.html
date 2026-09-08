@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu — Sesto Elemento</title>
+  <meta name="description" content="Il menu di Sesto Elemento: pizze classiche dal forno a legna, fritti e antipasti, birre artigianali alla spina, cocktail e vini." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Karla:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-logo" href="index.html">
+        <img src="assets/logo-sesto-elemento.png" alt="Sesto Elemento" />
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Apri il menu di navigazione">
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" aria-current="page">Menu</a>
+        <a href="index.html#locale">Il locale</a>
+        <a href="index.html#contatti">Contatti</a>
+        <a class="btn btn-solid btn-sm"
+           href="https://api.whatsapp.com/send/?phone=393317848189&amp;text&amp;type=phone_number&amp;app_absent=0"
+           target="_blank" rel="noopener">Prenota</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenuto">
+
+    <!-- Riempita da js/pizza-del-mese.js in base al mese corrente -->
+    <section class="pdm" id="pizza-del-mese">
+      <div class="pdm-box">
+        <span class="pdm-label">Pizza del mese <span class="pdm-mese" data-pdm="mese"></span></span>
+        <div class="pdm-body">
+          <h2 class="pdm-name" data-pdm="nome"></h2>
+          <p class="pdm-desc" data-pdm="desc"></p>
+        </div>
+        <span class="pdm-price" data-pdm="prezzo"></span>
+      </div>
+    </section>
+
+    <section class="menu-section" id="pizze">
+      <h2 class="section-title">Le classiche</h2>
+      <div class="menu-columns">
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Marinara</h3>
+              <p class="menu-item-desc">Pomodoro, aglio, origano, olio evo</p>
+            </div>
+            <span class="menu-item-price">6,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Margherita</h3>
+              <p class="menu-item-desc">Pomodoro, fiordilatte, basilico</p>
+            </div>
+            <span class="menu-item-price">7,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Napoli</h3>
+              <p class="menu-item-desc">Pomodoro, fiordilatte, alici, capperi, origano</p>
+            </div>
+            <span class="menu-item-price">9,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Diavola</h3>
+              <p class="menu-item-desc">Pomodoro, fiordilatte, salame piccante</p>
+            </div>
+            <span class="menu-item-price">9,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Capricciosa</h3>
+              <p class="menu-item-desc">Pomodoro, fiordilatte, prosciutto cotto, funghi, carciofi, olive</p>
+            </div>
+            <span class="menu-item-price">11,00</span>
+          </div>
+        </div>
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Quattro formaggi</h3>
+              <p class="menu-item-desc">Fiordilatte, gorgonzola, pecorino, provola</p>
+            </div>
+            <span class="menu-item-price">10,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Bufala</h3>
+              <p class="menu-item-desc">Pomodoro, bufala campana, basilico</p>
+            </div>
+            <span class="menu-item-price">10,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Salsiccia e friarielli</h3>
+              <p class="menu-item-desc">Fiordilatte, salsiccia, friarielli</p>
+            </div>
+            <span class="menu-item-price">11,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Ortolana</h3>
+              <p class="menu-item-desc">Pomodoro, fiordilatte, verdure grigliate di stagione</p>
+            </div>
+            <span class="menu-item-price">10,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Crudo e stracciatella</h3>
+              <p class="menu-item-desc">Fiordilatte, prosciutto crudo, stracciatella a crudo</p>
+            </div>
+            <span class="menu-item-price">12,50</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2 class="section-title">Fritti e antipasti</h2>
+      <div class="menu-columns">
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Crocchè di patate</h3>
+              <p class="menu-item-desc">Due pezzi</p>
+            </div>
+            <span class="menu-item-price">4,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Montanarine</h3>
+              <p class="menu-item-desc">Tre pezzi, pomodoro e parmigiano</p>
+            </div>
+            <span class="menu-item-price">5,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Tagliere di salumi</h3>
+              <p class="menu-item-desc">Selezione con focaccia</p>
+            </div>
+            <span class="menu-item-price">12,00</span>
+          </div>
+        </div>
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Frittatina di pasta</h3>
+              <p class="menu-item-desc">Classica, besciamella e piselli</p>
+            </div>
+            <span class="menu-item-price">4,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Fiori di zucca fritti</h3>
+              <p class="menu-item-desc">Due pezzi, ricotta e alici</p>
+            </div>
+            <span class="menu-item-price">6,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Insalata di stagione</h3>
+              <p class="menu-item-desc">Verdure fresche, pomodoro, olive</p>
+            </div>
+            <span class="menu-item-price">7,00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="bere">
+      <h2 class="section-title">Birre artigianali</h2>
+      <p class="section-note">Sei spine che ruotano. Chiedi al banco le birre del momento.</p>
+      <div class="menu-columns">
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Pils alla spina</h3>
+              <p class="menu-item-desc">0,2 / 0,4 — birrificio italiano</p>
+            </div>
+            <span class="menu-item-price">3,50 / 6,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">IPA alla spina</h3>
+              <p class="menu-item-desc">0,2 / 0,4 — luppolata, amara</p>
+            </div>
+            <span class="menu-item-price">4,00 / 7,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Weizen alla spina</h3>
+              <p class="menu-item-desc">0,2 / 0,4 — frumento, non filtrata</p>
+            </div>
+            <span class="menu-item-price">4,00 / 6,50</span>
+          </div>
+        </div>
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Bottiglie artigianali</h3>
+              <p class="menu-item-desc">33 cl — selezione in carta</p>
+            </div>
+            <span class="menu-item-price">5,00 — 8,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Trappiste e belghe</h3>
+              <p class="menu-item-desc">33 cl — alta fermentazione</p>
+            </div>
+            <span class="menu-item-price">7,00 — 9,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Analcolica</h3>
+              <p class="menu-item-desc">33 cl</p>
+            </div>
+            <span class="menu-item-price">4,50</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2 class="section-title">Cocktail e vini</h2>
+      <div class="menu-columns">
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Spritz</h3>
+              <p class="menu-item-desc">Bitter, prosecco, soda</p>
+            </div>
+            <span class="menu-item-price">6,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Negroni</h3>
+              <p class="menu-item-desc">Gin, vermouth rosso, bitter</p>
+            </div>
+            <span class="menu-item-price">8,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Gin tonic</h3>
+              <p class="menu-item-desc">Selezione di gin al banco</p>
+            </div>
+            <span class="menu-item-price">8,00</span>
+          </div>
+        </div>
+        <div class="menu-col">
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Vino della casa</h3>
+              <p class="menu-item-desc">Bianco o rosso — calice / caraffa</p>
+            </div>
+            <span class="menu-item-price">4,00 / 9,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Bottiglie in carta</h3>
+              <p class="menu-item-desc">Etichette regionali</p>
+            </div>
+            <span class="menu-item-price">da 16,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-body">
+              <h3 class="menu-item-name">Amari e distillati</h3>
+              <p class="menu-item-desc">Fine serata</p>
+            </div>
+            <span class="menu-item-price">4,00 — 7,00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contatti">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <span class="footer-label">Dove siamo</span>
+          <p class="footer-text">Via Umberto I', 17<br />27010 Monteleone (PV)</p>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">Orari</span>
+          <p class="footer-text">Lunedì 08–14, 16–23<br />Martedì chiuso<br />Mercoledì e giovedì 08–14, 16–23<br />Venerdì e sabato 08–14, 16–00<br />Domenica 08–14, 17–00</p>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">Contatti</span>
+          <p class="footer-text">Tel. <a href="tel:+393317848189">331 784 8189</a><br /><a href="mailto:info@sestoelemento.it">info@sestoelemento.it</a><br />Instagram @sestoelemento</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-legal">© 2026 Sesto Elemento — P.IVA 00000000000</span>
+        <div class="socials">
+          <a class="social" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4.2"></circle>
+              <circle cx="17.4" cy="6.6" r="1.1" fill="#111111" stroke="none"></circle>
+            </svg>
+          </a>
+          <a class="social social-f" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/pizza-del-mese.js"></script>
+</body>
+</html>
